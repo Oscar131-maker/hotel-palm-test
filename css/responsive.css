@@ -1,0 +1,263 @@
+/** Breackpoint: 998px **/
+@media screen and (max-width:998px){
+   
+   /** Toggle menu class **/
+   .mobile-menu{right:0%; transition:300ms;}
+   .hide-mobile-menu{right:-100%; transition:300ms;}
+    
+   /** Principal Menu **/
+   #principal-header{
+     grid-template-columns:100%;
+   }
+   #principal-header .logo-section{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+   }
+   #principal-header .logo-section .logo img{margin-top:0px;}
+   #principal-header .logo-section #btn-menu{
+       display: block;
+       cursor: pointer;
+   }
+   #principal-header .list-container{
+       position:absolute;
+       top:0;
+       width:40%;
+       height:100vh;
+       padding:8px 10px;
+       background-color:#1e2a3d;
+   }
+   #principal-header .list-container .close-menu{
+       padding:0px 15px;
+       background-color:#161e2b;
+       border-radius:10px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-top:5px;
+       margin-bottom: 10px;
+       cursor: pointer;
+   }
+   #principal-header .list-container .close-menu .close-menu-text{
+       font-weight:var(--montserrat-medium);
+       font-size:18px;
+       color:var(--white);
+   }
+   #principal-header .list-container .close-menu #close-menu-id{
+       width:30px;
+   }
+   #principal-header .list-container .link-container{
+      display: block;
+   }
+   #principal-header .list-container .link-container .link-item {
+       list-style: none;
+       padding:5px 0px;
+       margin-bottom:15px;
+   }
+   #principal-header .list-container .link-container .link-item .link{
+       display:block;
+       padding:5px 15px;
+       color:var(--white);
+       font-weight:var(--montserrat-medium);
+       font-size:17px;
+       border-radius:10px;
+       transition:250ms;
+   }
+
+   /** Hero **/
+   .hero-container{
+      aspect-ratio:16/10;
+   }
+   .hero-container .content-wrapper{
+      width:90%;
+   }
+   .hero-container .content-wrapper p{
+      font-size:16px;
+      line-height:24px;
+   }
+
+   /** About section **/
+   #nuestra-mision{
+     grid-template-columns:100%;
+     gap:20px;
+     padding-bottom: 0px;
+   }
+   #nuestra-mision .right img{display: none;}
+
+   /** Galería **/
+   #galeria{
+     padding-top:50px;
+   }
+   #galeria .container-md hr{
+     margin-bottom:20px;
+   }
+   #galeria .container-md .text-section{
+     font-size:16px;
+     line-height:26px;
+     margin-top:0px;
+   }
+
+   /** Localidades **/
+   #localidades{
+     background-image:url(../assets/location.jpg);
+     background-size: cover;
+     background-color: rgba(20, 24, 32, 0.9);
+     background-blend-mode: soft-light;
+     grid-template-columns:100%;
+     padding:80px 0px;
+   }
+   #localidades figure img{display: none;}
+
+   /** Restaurant & Rooms **/
+   #servicios .restaurant div .text-section, #servicios .room div .text-section{
+     font-size:15px;
+     line-height:25px;
+   }
+   #servicios .room div{
+     padding-top:40px;
+     padding-right:40px;
+   }
+
+   /** Blog **/
+   .post-container{
+     grid-template-columns:repeat(2, 1fr);
+     gap:20px;
+   }
+   #blog .container-md hr{
+     margin-bottom:20px;
+   }
+   #blog .container-md .text-section{
+      font-size:16px;
+      line-height:26px;
+      margin-top:0px;
+    }
+
+   /** Contacto **/
+   .contact-section{
+     grid-template-columns:100%;
+   }
+   .contact-section .section-left{
+     padding:80px 30px;
+   }
+   .contact-section .section-left .isotipo{
+     width:70px;
+   }
+   .contact-section .section-right{
+     padding:80px;
+   }
+   .contact-section .section-right #contact-form .form-control .textarea-control{
+     height:150px;
+   }
+
+   /** Footer **/
+   #footer > .widget-content{
+      grid-template-columns:repeat(2, 1fr);
+   }
+
+}
+
+/** Breackpoint: 698px **/
+@media only screen and (max-width:698px){
+  /** Navigation menu **/
+  #principal-header .list-container{
+    width:60%;
+  }
+
+  /** Hero **/
+  .hero-container{
+    aspect-ratio:16/18;
+  }
+
+  /** Galeria y room **/
+  #galeria .container-md, #blog .container-md{
+    width:100%;
+  }
+  
+  /** Restaurant & Rooms **/
+  #servicios .restaurant{
+    margin-bottom:80px;
+  }
+  #servicios .restaurant, #servicios .room{
+    grid-template-columns:100%;
+  }
+  #servicios .restaurant figure, #servicios .room figure{
+    grid-row:3/2;
+    margin-top:20px;
+  }
+  #servicios .restaurant div{
+    padding:0px;
+  }
+  #servicios .room div{
+    padding:0px;
+  }
+
+}
+
+/** Breackpoint: 698px **/
+@media only screen and (max-width:598px){
+  #localidades .container{
+      padding-left:0px;
+  }
+  .post-container{
+    grid-template-columns:100%;
+    gap:30px;
+  }
+  .contact-section .section-left .info-block{
+    grid-template-columns:100%;
+    gap:30px;
+  }
+  .contact-section .section-right{
+    padding:40px;
+  }
+  #footer > .widget-content{
+    grid-template-columns:100%;
+  }
+}
+
+/** Breackpoint: 498px **/
+@media only screen and (max-width:498px){
+
+   /** Hero **/
+   .hero-container{
+     aspect-ratio:16/20;
+   }
+   .hero-container .content-wrapper h1{
+     font-size:28px;
+   }
+
+   /** Fonts **/
+   .title-section{
+     font-size:32px;
+   }
+   .text-section{
+     font-size:15px;
+   }
+
+}
+/** Breackpoint: 398px **/
+@media only screen and (max-width:398px){
+
+  #principal-header .list-container{
+    width:80%;
+  }
+  #principal-header{
+    padding:0px 20px;
+  }
+  .hero-container{
+    aspect-ratio:16/28;
+  }
+  .hero-container .content-wrapper p{
+    font-size:14px;
+  }
+}
+/** Breackpoint: 298px **/
+@media only screen and (max-width:298px){
+  .hero-container{
+    aspect-ratio:16/32;
+  }
+  .hero-container .content-wrapper .isotipo-hero-container{
+    height: 71px;
+    margin-bottom: 12px;
+  }
+}
+

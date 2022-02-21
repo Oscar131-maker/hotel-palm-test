@@ -1,0 +1,212 @@
+/** About section **/
+#nuestra-mision{
+  display: grid;
+  grid-template-columns:55% 45%;
+  gap:50px;
+}
+
+/** GAllery section **/
+.slider-container{
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+   aspect-ratio: 1/1;
+   text-align: center;
+   font-size: 18px;
+   background: #fff;   
+   /* Center slide text vertically */
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+}
+.swiper-slide img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.swiper {
+   margin-left: auto;
+   margin-right: auto;
+}
+.swiper-pagination {
+   position: static !important;
+   margin-top: 20px !important;
+}
+
+/** Location **/
+#localidades{
+   display:grid;
+   grid-template-columns:45% 50%;
+}
+
+/** Restaurant & Rooms **/
+#servicios .restaurant, #servicios .room{
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+}
+
+/** Blog **/
+.post-container{
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:30px;
+}
+.post-container .post-card{
+  width:100%;
+  padding:15px 15px 30px 15px;
+  background-color:var(--white);
+  border:1px solid rgba(179, 179, 179, 0.5);
+}
+.post-container .post-card .img-post{
+   width:100%;
+   aspect-ratio: 1/1;
+   object-fit: cover;
+   margin-bottom:20px;
+}
+.post-container .post-card .category-post{
+  color:var(--btn);
+  font-size:15px;
+  font-weight: var(--cormorant-semibold);
+}
+.post-container .post-card .title-post{
+   font-size:17px;
+   margin-top:15px;
+   margin-bottom:13px;
+   font-weight:var(--montserrat-bold);
+}
+.post-container .post-card .title-post a{
+   color:var(--text);
+   transition:300ms;
+}
+.post-container .post-card .title-post a:hover{color: var(--btn);}
+.post-container .post-card .post-text{
+   font-size:15px;
+   line-height:20px;
+   color:var(--black);
+   margin-bottom:30px;
+}
+.post-container .post-card .btn-post{
+   background-color:var(--btn);
+   color:var(--white);
+   padding:8px;
+   border-radius:20px;
+   transition:400ms;
+}
+.post-container .post-card .btn-post:hover{
+   background-color:var(--btnHover);
+}
+
+/** Contacto **/
+.contact-section{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+/** Section right **/
+.contact-section .section-left{
+  width:100%;
+  padding:150px 0px;
+  background-image:url(../assets/img-4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(20, 26, 39, 0.9);
+  background-blend-mode:soft-light;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .section-left .isotipo{width:100px;}
+.contact-section .section-left .contact-title{
+  color:var(--white);
+  font-size:25px;
+  text-align: center;
+  font-weight: var(--cormorant-semibold);
+  margin:15px 0px 15px 0px;
+}
+.contact-section .section-left .info-block{
+   display:grid;
+   grid-template-columns:repeat(3, 1fr);
+   margin-top:20px;
+   padding:0px 30px;
+}
+.contact-section .section-left .info-block .info{
+   justify-self: center; 
+   text-align: center;
+   color:var(--white);
+}
+.contact-section .section-left .info-block .info h4{
+   font-weight:var(--montserrat-semibold);
+   margin-bottom:5px;
+}
+
+/** Section right **/
+.contact-section .section-right{
+   padding:30px;
+}
+.contact-section .section-right #contact-form .form-control{
+   display: block;
+}
+.contact-section .section-right #contact-form .form-control label{
+   font-size:17px;
+   display: block;
+}
+.contact-section .section-right #contact-form .form-control .input-control{
+   border: none;
+   border-bottom: 1px solid var(--black);
+   display: block;
+   width: 100%;
+   margin-top: 15px;
+   font-size: 17px;
+   outline:none;
+}
+.contact-section .section-right #contact-form .form-control .textarea-control{
+   width: 100%;
+   height: 100px;
+   margin-top: 10px;
+   border: 1px solid rgba(0,0,0,0.3);
+   outline: none;
+   font-size: 14px;
+   padding: 10px;
+   font-weight:var(--montserrat-medium);
+}
+.contact-section .section-right #contact-form .gdpr-control .checkbox-input{
+   width:16px;
+   height:16px;
+}
+.contact-section .section-right #contact-form .gdpr-control .gdpr-message{
+   font-size:15px;
+}
+.contact-section .section-right #contact-form .form-control .submit-form{
+   border:none;
+   background-color:var(--btn);
+   color:var(--white);
+   font-size:17px;
+   padding:8px 12px;
+   cursor: pointer;
+   transition:400ms;
+}
+.contact-section .section-right #contact-form .form-control .submit-form:hover{
+   background-color:var(--btnHover);
+}
+
+

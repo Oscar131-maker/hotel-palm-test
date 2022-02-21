@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+/** Import **/
+@import url(css/var.css);
+@import url(css/general.css);
+@import url(css/menu.css);
+@import url(css/hero.css);
+@import url(css/front.css);
+@import url(css/footer.css);
+@import url(css/responsive.css);
+

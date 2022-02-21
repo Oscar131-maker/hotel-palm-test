@@ -1,0 +1,24 @@
+:root{
+    --principal:#667da7;
+    --second:#cbc5c1;
+    --black:#131313;
+    --text:#313131;
+    --white:#ffffff;
+    --btn:#3567c4;
+    --btnHover:#6897ee;
+    --transparent:transparent;
+    --cormorant:'Cormorant Garamond', serif;
+    --cormorant-light:300;
+    --cormorant-regular:400;
+    --cormorant-medium:500;
+    --cormorant-semibold:600;
+    --cormorant-bold:700;
+    --montserrat:'Montserrat', sans-serif;
+    --montserrat-regular:400;
+    --montserrat-medium:500;
+    --montserrat-semibold:600;
+    --montserrat-bold:700;
+}
+
+
+
